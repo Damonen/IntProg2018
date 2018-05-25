@@ -1,0 +1,167 @@
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	margin-left: -500px;
+	width:1000px;
+	background: #1c1b22;
+	height: 70px;
+	transition: all 420ms;
+	z-index: 99;
+}
+.navbarB {
+	top: 0;
+	position: relative;
+	float: left;
+	background: #292731;
+	background: linear-gradient(to top, #292731, #3e3c43);
+	width: 150px;
+	margin-right: 1px;
+	height: inherit;
+	color: white;
+	text-align: center;
+	font: 300 15px/70px Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	transition: all 420ms;
+	transition: box-shadow 1600ms;
+}
+.left {
+	margin-right: 0px;
+}
+.navbarB.link {
+	position:relative;
+	float: right;
+	height: inherit;
+	width: 245px;
+}
+.navline {
+	position: fixed;
+	background-color: #c5e2ed;
+	top: 70px;
+	left: 50%;
+	margin-left: -500px;
+	width:1000px;
+	height: 6px;
+	z-index: 101;
+	transition: top 420ms;
+}
+
+.iconNav {
+	position: relative;
+	background-repeat: no-repeat;
+	height: 36px;
+	width: 36px;
+	z-index: 105;
+	transition: all 700ms;
+}
+.iconNav.vk {
+	background-image: url("/images/icons/vkLogo.png");
+}
+.iconNav.inst {
+	background-image: url("/images/icons/instLogo.png");
+}
+.iconNav.vk:hover {
+	background-image: url("/images/icons/vkLogo1.png");
+	transition: all 420ms;
+}
+.iconNav.inst:hover{
+	background-image: url("/images/icons/instLogo1.png");
+	transition: all 420ms;
+}
+
+#vkSoc {
+	float: right;
+	position: relative;
+	height: 36px;
+	margin-top: 17px;
+	margin-right: 30px;
+	width: 36px;
+}
+#instSoc {
+	float: right;
+	position: relative;
+	height: 36px;
+	margin-top: 17px;
+	margin-right: 17px;	
+	width: 36px;
+}
+.soc {
+	transition: all 420ms;
+}
+
+.sticky {
+	height: 40px;
+}
+.stickyLine {
+	top: 40px;
+}
+.sticky3 {
+	margin-top: 4px !important;
+}
+
+.navbarBInn {
+	pointer-events: none;
+	position: absolute;
+	top: 0px;
+	width: 150px;
+	height: 0px;
+	margin-right: 2px;
+	background: rgba(255,255,255,0.1);
+	transition: all 420ms;
+}
+.navbarBInn:last-child {
+	margin-right: 0px;
+}
+.navbarBInnH {
+	height: 70px;
+	box-shadow: inset 2px 0px 10px 0px rgba(255,255,255,0.1);
+}
+.navbarBInnHH {
+	height: 40px;
+	box-shadow: inset 2px 0px 10px 0px rgba(255,255,255,0.1);
+}
+
+@media only screen and (max-width: 990px) {
+    #navbar {
+		left: 0px;
+		width: 20%;
+		min-width: 140px;
+		height: 357px;
+		height: 0px;
+		margin: auto;
+		overflow: hidden;
+	}
+	.navbarB {
+		width: 100%;
+		height: 70px;
+		margin-bottom: 2px;
+		line-height: 70px;
+	}
+	#navline {
+		display: none;
+		margin: auto;
+	}
+	.navbarBInnH {
+		height: inherit;
+	}
+	.navbarBInnHH {
+		height: 100%;
+	}
+	.navbarBInn {
+		width: inherit;
+	}
+	.navbarB.link {
+		display: none;
+		width: 100%;
+		height: 70px;
+	}
+}
+
+
+
+
+
+
+
+
+
