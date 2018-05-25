@@ -1,0 +1,126 @@
+body {
+	margin: 0;
+	background-color: black;
+	transition: all 420ms;
+	color: white;
+}
+.currLvl {
+	margin-top: 10px;
+}
+#music {
+	position: fixed;
+	opacity: 0.5;
+	top: 105px;
+	left: 5px;
+	height: 30px;
+	width: 30px;
+	background-size: contain;
+}
+.mOn{
+	background-image: url(/images/musicOn.png);
+}
+.mOff{
+	background-image: url(/images/musicOff.png);
+}
+.sOn{
+	background-image: url(/images/soundOn.png);
+}
+.sOff{
+	background-image: url(/images/soundOff.png);
+}
+#music:hover {
+	opacity: 1;
+}
+#sound {
+	position: fixed;
+	opacity: 0.5;
+	top: 135px;
+	left: 5px;
+	height: 30px;
+	width: 30px;
+	background-size: contain;
+}
+#sound:hover {
+	opacity: 1;
+}
+
+.changeLvl {
+	position: relative;
+	float: left;
+	text-align: center;
+	width: 95px;
+	margin-right: 2px;
+	height: 70px;
+	background: #1c1b22;
+	transition: box-shadow 400ms;
+}
+#turnCount {
+	margin: auto;
+	top: 110px;
+	width: inherit;
+	position: absolute;
+	pointer-events: none;
+	text-align: center;
+}
+#textcontain {
+	height: 170px;
+	position: relative;
+	margin: auto;
+	width: 485px;
+	margin-top: 5px;
+	color: white;
+	font: 600 20px/70px Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.changeLvl:hover {
+	box-shadow: inset 2px 0px 10px 0px rgba(255,255,255,0.1);
+}
+#maincontain {
+	top: 50%;
+	position: relative;
+	/*transform: perspective(1px) translateY(-50%);*/
+	margin: auto;
+}
+#player {
+	background: url(/images/player1.png) center no-repeat;
+	position: absolute;
+	z-index:5;
+	transition: 420ms;
+}
+.enemy1.block {
+	background: url(/images/enemy1.png) center no-repeat;
+	position: absolute;
+	z-index:4;
+	transition: 420ms;
+}
+#destruction.block {
+	background: url(/images/destroy1.png) center no-repeat;
+	display:none;
+	z-index:6;
+	position: absolute;
+}
+.obstacle {
+	background: url(/images/obstacle1.png) center no-repeat;	
+	z-index:3;
+}
+.dObstacle {
+	background: url(/images/Dobstacle1.png) center no-repeat;
+	z-index:3;
+}
+.finish {
+	background: url(/images/finish1.png) center no-repeat;
+	z-index:3;
+}
+.block {
+	float: left;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	overflow: visible;
+	/*pointer-events: none;*/
+}
+.even {
+	background: url(/images/even.png) center no-repeat;	
+}
+.uneven {
+	background: url(/images/uneven.png) center no-repeat;
+}
